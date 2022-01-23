@@ -7,6 +7,7 @@ module.exports = {
 		'plugin:react/recommended',
 		'airbnb',
 		'plugin:prettier/recommended',
+		'plugin:react-hooks/recommended',
 	],
 	parserOptions: {
 		ecmaFeatures: {
@@ -18,5 +19,9 @@ module.exports = {
 	plugins: ['react'],
 	rules: {
 		'prettier/prettier': 'error',
+		'react/function-component-definition': [
+			2,
+			{ namedComponents: 'arrow-function' },
+		],
 	},
 };
